@@ -17,7 +17,7 @@ body>div{
     border: 2px solid #000000;
     border-radius: 20px;
     padding: 1px;
-    width: 600px;
+    width: 650px;
 }
 body>div>div{
     display: flex;
@@ -111,4 +111,11 @@ label{
 }
 #custom-rounds input{
     width: 190px;
+}
+span{
+    position: relative;
+    display: inline-block;
+    font-family: monospace, sans-serif;
+    font-size: 0.8rem;
+    top: -15px;
 }

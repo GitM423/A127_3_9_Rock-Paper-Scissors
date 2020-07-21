@@ -148,7 +148,7 @@ function sendData(pick) {
 
             // Output
             if (outcome == 'win') {
-                result.innerHTML = `${pick} beats ${compPick}. <b style="color:#28A745">You win the round!</b>`
+                result.innerHTML = `${pick}<span>(user)</span> beats ${compPick}<span>(comp)</span>. <b style="color:#28A745">You win the round!</b>`
                 userWins++
                 document.getElementById(pick + "-label").style.transition = "borderColor 0.5s, background 0.5s"
                 document.getElementById(pick + "-label").style.borderColor = "#28A745"
@@ -156,7 +156,7 @@ function sendData(pick) {
 
             }
             else if (outcome == 'lose') {
-                result.innerHTML = `${compPick} beats ${pick}. <b style="color:#DC3545">You lose the round!</b>`
+                result.innerHTML = `${compPick}<span>(comp)</span> beats ${pick}<span>(user)</span>. <b style="color:#DC3545">You lose the round!</b>`
                 compWins++
                 document.getElementById(pick + "-label").style.transition = "borderColor 0.5s, background 0.5s"
                 document.getElementById(pick + "-label").style.borderColor = "#DC3545"
