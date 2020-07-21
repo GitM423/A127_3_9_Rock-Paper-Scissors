@@ -1,0 +1,114 @@
+ body{
+    margin: 0;
+    min-height: calc(100vh - 800px);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+body>div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 1px;
+    width: 600px;
+}
+body>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    min-height: 120px;
+    margin: 10px 0;
+    padding: 10px 30px;
+}
+h4{
+    margin: 0 0 10px;
+    color: #005CC8;
+    font-size: 1.4rem;
+}
+input, select{
+    font-size: 1.3rem;
+}
+label{
+    font-size: 1.2rem;
+}
+#radio label{
+    display: inline-block;
+    margin-right: 50px;
+    padding: 5px 0;
+}
+#score-sec{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#score{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0 10px;
+}
+#player1, #player2{
+    background: #666666;
+    color: #ffffff;
+    text-align: center;
+    width: 50px;
+    padding: 4px;
+}
+#result{
+    text-align: center;
+    font-size: 1.6rem;
+}
+#button-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.image-btn label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 5px solid #000000;
+    border-radius: 50%;
+    margin: 5px;
+}
+.image-btn img{
+    height: 80px;
+    width: 80px;
+}
+.btn{
+    display: none;
+}
+#reset{
+    align-self: center;
+    width: 50%;
+    margin: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #DC3545;
+}
+#custom-rounds{
+    display: inline;
+}
+#custom-rounds input{
+    width: 190px;
+}

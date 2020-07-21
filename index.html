@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1>Rock Paper Scissors Lizard Spock</h1>
+    <div>
+        <div>
+            <h4>How many rounds?</h4>
+            <div id="radio">
+                <input type="radio" name="rounds" id="five"" onclick=" checkRounds()" checked>
+                <label for="five">5</label>
+
+                <input type="radio" name="rounds" id="ten"" onclick=" checkRounds()">
+                <label for="ten">10</label>
+
+                <input type="radio" name="rounds" id="fifteen"" onclick=" checkRounds()">
+                <label for="fifteen">15</label>
+
+                <input type="radio" name="rounds" id="twenty"" onclick=" checkRounds()">
+                <label for="twenty">20</label>
+
+                <br>
+                <input type="radio" name="rounds" id="custom"" onclick=" checkRounds()">
+                <label for="custom">custom</label>
+                <div id="custom-rounds"></div>
+            </div>
+        </div>
+        <div>
+            <h4>Score</h4>
+            <div id="score-sec">
+                <p id="player1">USER</p>
+                <p id="score">0 : 0</p>
+                <p id="player2">COMP</p>
+            </div>
+        </div>
+        <div>
+            <p id="result">Let's play</p>
+        </div>
+
+        <div id="button-sec">
+            <div id="buttons">
+                <div class="image-btn">
+                    <label id="Rock-label" for="Rock">
+                        <img src="assets/img/rock.png" />
+                    </label>
+                    <input type="button" value="Rock" id="Rock" class="btn" onclick="sendData('Rock')">
+                </div>
+
+                <div class="image-btn">
+                    <label id="Paper-label" for="Paper">
+                        <img src="assets/img/paper.png" />
+                    </label>
+                    <input type="button" value="Paper" id="Paper" class="btn" onclick="sendData('Paper')">
+
+                </div>
+
+                <div class="image-btn">
+                    <label id="Scissors-label" for="Scissors">
+                        <img src="assets/img/scissors.png" />
+                    </label>
+                    <input type="button" value="Scissors" id="Scissors" class="btn" onclick="sendData('Scissors')">
+                </div>
+
+                <div class="image-btn">
+                    <label id="Lizard-label" for="Lizard">
+                        <img src="assets/img/lizard.png" />
+                    </label>
+                    <input type="button" value="Lizard" id="Lizard" class="btn" onclick="sendData('Lizard')">
+                </div>
+
+                <div class="image-btn">
+                    <label id="Spock-label" for="Spock">
+                        <img src="assets/img/spock.png" />
+                    </label>
+                    <input type="button" value="Spock" id="Spock" class="btn" onclick="sendData('Spock')">
+                </div>
+            </div>
+            <h3>MAKE YOUR MOVE.</h3>
+        </div>
+
+        <input type="button" value="Reset" id="reset" onClick="history.go(0)">
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
